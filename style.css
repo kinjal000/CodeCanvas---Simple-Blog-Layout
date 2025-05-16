@@ -1,0 +1,137 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eceae8; 
+    color: #292a1c; 
+  }
+  
+  .fade-in {
+    animation: fadeIn 1.2s ease-in-out both;
+  }
+  @keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  
+  header {
+    background-color: #6c4e37; 
+    padding: 20px;
+    color: #eceae8;
+    text-align: center;
+  }
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 15px;
+  }
+  nav ul li a {
+    color: #eceae8;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-height: 300px;
+    object-fit: cover;
+    border-bottom: 5px solid #907c4d; /* Gold-Bronze */
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    gap: 30px;
+  }
+  
+  .blog-posts {
+    flex: 2;
+  }
+  .blog-card {
+    background-color: #ceb291;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+  }
+  .blog-card:hover {
+    transform: translateY(-5px);
+  }
+  .blog-card h2 {
+    color: #292a1c;
+  }
+  .blog-card a {
+    text-decoration: none;
+    color: #548c88; 
+    font-weight: bold;
+  }
+  
+  aside {
+    flex: 1;
+  }
+  .about-me {
+    background-color: #b4947a;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.08);
+  }
+  .categories {
+    background-color: #c9bab0; 
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.08);
+  }
+  .recent-posts {
+    background-color: #8f8a7d; 
+    color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.08);
+  }
+  .recent-posts ul a{
+    color: white;
+  }
+  aside h3 {
+    border-bottom: 2px solid #907c4d;
+    padding-bottom: 5px;
+  }
+  
+  footer {
+    background-color: #6c4e37;
+    color: #eceae8;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    margin-top: 40px;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+    nav ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  
+
+
+
